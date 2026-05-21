@@ -1,0 +1,82 @@
+.risk-alert {
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  animation: fade-in 0.3s ease-out;
+}
+
+.risk-alert-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.risk-level-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.risk-category {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.risk-alert-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--foreground);
+  margin: 0 0 4px 0;
+}
+
+.risk-alert-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.risk-alert-recommendation {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 8px 0 0 0;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-sm);
+  line-height: 1.5;
+}
+
+.risk-alert-learn-more {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-top: 8px;
+  transition: opacity var(--transition-fast);
+}
+
+.risk-alert-learn-more:hover {
+  opacity: 0.8;
+}
+
+.risk-level-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.risk-level-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}

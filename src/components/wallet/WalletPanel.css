@@ -1,0 +1,360 @@
+.wallet-panel {
+  padding: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.wallet-hero {
+  text-align: center;
+  padding: 32px 16px;
+  margin-bottom: 24px;
+}
+
+.wallet-hero-visual {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dandelion-bg {
+  position: absolute;
+  inset: -40px;
+  pointer-events: none;
+}
+
+.wallet-hero-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0 0 8px 0;
+}
+
+.wallet-hero-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Actions */
+.wallet-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  width: 100%;
+  padding: 14px;
+  background: var(--surface-page);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-light);
+  border-color: var(--primary-soft);
+}
+
+/* Import Section */
+.import-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.import-warning {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  background: var(--risk-danger-bg);
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+}
+
+.import-warning strong {
+  font-size: 13px;
+  color: #991B1B;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.import-warning p {
+  font-size: 12px;
+  color: #B91C1C;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.warning-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.import-input-group {
+  margin-bottom: 12px;
+}
+
+.import-input-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--foreground);
+  margin-bottom: 6px;
+}
+
+.mnemonic-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: var(--font-mono);
+  resize: vertical;
+  background: var(--surface-page);
+  color: var(--foreground);
+  box-sizing: border-box;
+}
+
+.mnemonic-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.btn-import {
+  background: var(--secondary);
+}
+
+.btn-import:hover:not(:disabled) {
+  background: var(--secondary-hover);
+}
+
+.import-confirm-warning {
+  margin-top: 12px;
+  padding: 12px;
+  background: var(--risk-warning-bg);
+  border-radius: var(--radius-sm);
+}
+
+.import-confirm-warning p {
+  font-size: 13px;
+  color: #92400E;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.warning-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-danger {
+  flex: 1;
+  padding: 8px;
+  background: var(--error);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-confirm {
+  flex: 1;
+  padding: 8px;
+  background: var(--success);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Features */
+.wallet-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.feature-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.feature-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--foreground);
+  margin: 0 0 4px 0;
+}
+
+.feature-item p {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Connected Wallet */
+.wallet-card {
+  background: linear-gradient(135deg, #0A1628, #1A2744);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.wallet-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.wallet-type-badge {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-full);
+}
+
+.wallet-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #10B981;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10B981;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.wallet-address-display {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.wallet-balances {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.balance-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.balance-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.balance-value {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.balance-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Quick Actions */
+.wallet-quick-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.quick-action {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 8px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.quick-action:hover {
+  border-color: var(--primary-soft);
+  background: var(--primary-light);
+}
+
+.qa-icon {
+  font-size: 20px;
+}
